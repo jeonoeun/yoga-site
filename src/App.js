@@ -11,7 +11,7 @@ export default function App() {
     <div>
       <img
         className="banner-img"
-        src={process.env.PUBLIC_URL + "./images/two.jpg"}
+        src={process.env.PUBLIC_URL + "./images/banner.jpg"}
         alt=""
       />
       <Navbar />
