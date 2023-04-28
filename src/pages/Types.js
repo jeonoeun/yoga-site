@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from "react-iframe";
 
 export default function Types() {
   return (
@@ -20,15 +21,14 @@ export default function Types() {
         years. <br /> Who Might Like It: Anyone who wants more movement and less
         stillness from their yoga practice.
       </p>
-      <iframe
-        title="Vinyasa"
-        id="player"
+      <Iframe
+        url="http://www.youtube.com/embed/yxGXmjAkE5M"
         width="800"
         height="400"
-        src="http://www.youtube.com/embed/yxGXmjAkE5M"
+        id="player"
         className="mb-6"
       />
-      <h3 >Hatha Yoga</h3>
+      <h3>Hatha Yoga</h3>
       <p>
         Hatha yoga derives its name from the Sanskrit words for sun and moon,
         and it’s designed to balance opposing forces. The balance in hatha yoga
@@ -89,12 +89,11 @@ export default function Types() {
         looking to build trust and intimacy, or anyone with an adventurous
         streak who likes to go upside down.
       </p>
-      <iframe
-        title="Vinyasa"
-        id="player"
+      <Iframe
+        src="http://www.youtube.com/embed/KowDFJolg3E"
         width="800"
         height="400"
-        src="http://www.youtube.com/embed/KowDFJolg3E"
+        id="player"
         className="mb-6"
       />
     </div>

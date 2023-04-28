@@ -25,52 +25,55 @@ export default function Index() {
       </p>
       <div className="table_sec">
         <table className="table">
-          <tr>
-            <td>Yamas</td>
-            <td>
-              Five universal, ethical and moral observances to live by
-              (nonviolence, truthfulness, non-stealing, continence and
-              non-covetousness)
-            </td>
-          </tr>
-          <tr>
-            <td>Niyamas</td>
-            <td>
-              Five spiritual and self-discipline observances (cleanliness,
-              contentment, spiritual austerities, study of scriptures and
-              surrender to God)
-            </td>
-          </tr>
-          <tr>
-            <td>Asana</td>
-            <td>
-              physical posture, originally intended only for seated meditation,
-              but more recently adapted to encompass all physical yoga practices
-            </td>
-          </tr>
-          <tr>
-            <td>Pranayama</td>
-            <td>
-              breathing exercises to control the flow of prana (vital life
-              force)
-            </td>
-          </tr>
-          <tr>
-            <td>Pratyahara</td>
-            <td>Withdrawal of the senses</td>
-          </tr>
-          <tr>
-            <td>Dharana</td>
-            <td>Single pointed concentration</td>
-          </tr>
-          <tr>
-            <td>Dhyana</td>
-            <td>Meditation</td>
-          </tr>
-          <tr>
-            <td>Samadhi</td>
-            <td>Liberation or blissful union with the Divine</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Yamas</td>
+              <td>
+                Five universal, ethical and moral observances to live by
+                (nonviolence, truthfulness, non-stealing, continence and
+                non-covetousness)
+              </td>
+            </tr>
+            <tr>
+              <td>Niyamas</td>
+              <td>
+                Five spiritual and self-discipline observances (cleanliness,
+                contentment, spiritual austerities, study of scriptures and
+                surrender to God)
+              </td>
+            </tr>
+            <tr>
+              <td>Asana</td>
+              <td>
+                physical posture, originally intended only for seated
+                meditation, but more recently adapted to encompass all physical
+                yoga practices
+              </td>
+            </tr>
+            <tr>
+              <td>Pranayama</td>
+              <td>
+                breathing exercises to control the flow of prana (vital life
+                force)
+              </td>
+            </tr>
+            <tr>
+              <td>Pratyahara</td>
+              <td>Withdrawal of the senses</td>
+            </tr>
+            <tr>
+              <td>Dharana</td>
+              <td>Single pointed concentration</td>
+            </tr>
+            <tr>
+              <td>Dhyana</td>
+              <td>Meditation</td>
+            </tr>
+            <tr>
+              <td>Samadhi</td>
+              <td>Liberation or blissful union with the Divine</td>
+            </tr>
+          </tbody>
         </table>
         <img src={process.env.PUBLIC_URL + "./images/img01.png"} alt="" />
       </div>
@@ -139,17 +142,17 @@ export default function Index() {
           The period between 1700 - 1900 A.D. is considered as Modern period in
           which the great Yogacharyas- Ramana Maharshi, Ramakrishna Paramhansa,
           Paramhansa Yogananda, Vivekananda etc. have contributed for the
-          development of Raja Yoga. <br /> This was the period when Vedanta, Bhakti
-          yoga, Nathayoga or Hatha-yoga flourished. The Shadanga-yoga of
+          development of Raja Yoga. <br /> This was the period when Vedanta,
+          Bhakti yoga, Nathayoga or Hatha-yoga flourished. The Shadanga-yoga of
           Gorakshashatakam, Chaturanga-yoga of Hathayogapradipika, Saptanga-yoga
-          of Gheranda Samhita, were the main tenents of Hatha-yoga. <br /> Now in the
-          contemporary times, everybody has conviction about yoga practices
-          towards the preservation, maintenance and promotion of health. Yoga
-          has spread all over the world by the teachings of great personalities
-          like Swami Shivananda, Shri T.Krishnamacharya, Swami Kuvalayananda,
-          Shri Yogendara, Swami Rama, Sri Aurobindo, Maharshi Mahesh Yogi,
-          Acharya Rajanish, Pattabhijois, BKS. Iyengar, Swami Satyananda
-          Sarasvati and the like.
+          of Gheranda Samhita, were the main tenents of Hatha-yoga. <br /> Now
+          in the contemporary times, everybody has conviction about yoga
+          practices towards the preservation, maintenance and promotion of
+          health. Yoga has spread all over the world by the teachings of great
+          personalities like Swami Shivananda, Shri T.Krishnamacharya, Swami
+          Kuvalayananda, Shri Yogendara, Swami Rama, Sri Aurobindo, Maharshi
+          Mahesh Yogi, Acharya Rajanish, Pattabhijois, BKS. Iyengar, Swami
+          Satyananda Sarasvati and the like.
         </p>
       </div>
       <h3>So Yoga is...</h3>
