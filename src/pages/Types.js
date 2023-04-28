@@ -22,7 +22,7 @@ export default function Types() {
         stillness from their yoga practice.
       </p>
       <Iframe
-        url="http://www.youtube.com/embed/yxGXmjAkE5M"
+        url="https://www.youtube.com/embed/yxGXmjAkE5M"
         width="800"
         height="400"
         id="player"
@@ -90,7 +90,7 @@ export default function Types() {
         streak who likes to go upside down.
       </p>
       <Iframe
-        src="http://www.youtube.com/embed/KowDFJolg3E"
+        src="https://www.youtube.com/embed/KowDFJolg3E"
         width="800"
         height="400"
         id="player"
