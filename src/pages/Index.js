@@ -4,6 +4,12 @@ export default function Index() {
   return (
     <div className="index page">
       <h3>Welcome to Yoga!</h3>
+      <p className="target">
+        Anyone with or without an interest in yoga is welcome. Find out all
+        about yoga.
+      </p>
+      <p >Yoga: Its meaning</p>
+      <h4>Definition</h4>
       <p>
         Yoga is a physical, mental and spiritual practice that originated in
         ancient India. First codified by the sage Patanjali in his Yoga Sutras
@@ -22,6 +28,23 @@ export default function Index() {
         Although each school or tradition of yoga has its own emphasis and
         practices, most focus on bringing together body, mind and breath as a
         means of altering energy or shifting consciousness.
+      </p>
+      <h4>Yogapedia explains Yoga</h4>
+      <p>
+        Modern yoga is most commonly associated with the physical practice of
+        asana, a series of postures often weaved together in styles such as
+        Vinyasa Flow or Ashtanga. Asana practice is generally intended to build
+        strength and stamina, to improve flexibility, coordination and balance,
+        and to relax the body. However, this provides only one small aspect of
+        the tradition of yoga as a whole.
+        <br /> Patanjali’s Yoga Sutras provide the traditional foundation of
+        yoga, in which he outlines an eightfold path of the practice. Known as
+        the ‘Eight Limbs of Yoga,’ this path offers a guide to individuals who
+        are dedicated to creating a union between body, mind and spirit.
+        <br /> Each of the Eight Limbs offers a means of living with more
+        integrity, self-discipline, respect for nature and connection with the
+        spiritual aspects of life. These eight practices are intended to be
+        carried out in a holistic and integrative manner:
       </p>
       <div className="table_sec">
         <table className="table">
@@ -77,6 +100,8 @@ export default function Index() {
         </table>
         <img src={process.env.PUBLIC_URL + "./images/img01.png"} alt="" />
       </div>
+      <p>Yoga: Its Origin, History and Development</p>
+      <h4>Origin</h4>
       <p>
         Yoga is essentially a spiritual discipline based on an extremely subtle
         science, which focuses on bringing harmony between mind and body. It is
@@ -94,6 +119,32 @@ export default function Index() {
         of sufferings leading to 'the state of liberation' (Moksha) or 'freedom'
         (Kaivalya). Living with freedom in all walks of life, health and harmony
         shall be the main objectives of Yoga practice.
+        <br />
+        "Yoga” also refers to an inner science comprising of a variety of
+        methods through which human beings can realize this union and achieve
+        mastery over their destiny .Yoga, being widely considered as an
+        'immortal cultural outcome' of Indus Saraswati Valley civilization –
+        dating back to 2700 B.C., has proved itself catering to both material
+        and spiritual upliftment of humanity.Basic humane values are the very
+        identity of Yoga Sadhana.
+      </p>
+      <h4>History</h4>
+      <p>
+        The practice of Yoga is believed to have started with the very dawn of
+        civilization. The science of yoga has its origin thousands of years ago,
+        long before the first religions or belief systems were born. <br />
+        In the yogic lore, Shiva is seen as the first yogi or Adiyogi, and the
+        first Guru or Adi Guru. Several Thousand years ago, on the banks of the
+        lake Kantisarovar in the Himalayas, Adiyogi poured his profound
+        knowledge into the legendary Saptarishis or "seven sages”. The sages
+        carried this powerful yogic science to different parts of the world,
+        including Asia, the Middle East, Northern Africa and South America.{" "}
+        <br />
+        Interestingly, modern scholars have noted and marvelled at the close
+        parallels found between ancient cultures across the globe. However, it
+        was in India that the yogic system found its fullest expression.
+        Agastya, the Saptarishi who travelled across the Indian subcontinent,
+        crafted this culture around a core yogic way of life.
       </p>
       <div className="history">
         <img src={process.env.PUBLIC_URL + "./images/img02.png"} alt="" />
@@ -155,10 +206,8 @@ export default function Index() {
           Satyananda Sarasvati and the like.
         </p>
       </div>
-      <h3>So Yoga is...</h3>
+      <h3>So Yoga is... (Conclusion)</h3>
       <p>
-        So Yoga is... (Conclusion)
-        <br />
         Yoga works on the level of one’s body, mind, emotion and energy. <br />{" "}
         This has given rise to four broad classifications of Yoga: karma yoga,
         where we utilize the body; bhakti yoga, where we utilize the emotions;

@@ -4,9 +4,15 @@
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 800;
   margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .page {
@@ -21,7 +27,7 @@ h3 {
 
 /* Navbar.js */
 .navbar {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .navbar .nav-list {
@@ -31,7 +37,7 @@ h3 {
 
 .navbar .nav-list > li > a {
   display: block;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .navbar .nav-list .active {
@@ -57,8 +63,17 @@ th {
   border: 1px solid;
 }
 
+tr > td:last-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
 .index .table {
   text-align: center;
+}
+
+.index .target {
+  margin-bottom: 7px;
 }
 
 .index p {
@@ -84,16 +99,33 @@ th {
   margin-bottom: 30px;
 }
 
+.types strong {
+  font-weight: 700;
+}
+
 #player {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 /* Gallery.js */
-.gallery img {
+.gallery .img {
   width: 300px;
   height: 300px;
-  object-fit: cover;
+  overflow: hidden;
   border: 1px solid rgba(221, 221, 221, 0.5);
+  cursor: pointer;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 .gallery .flex {
@@ -122,7 +154,24 @@ th {
 .input-email {
   width: 500px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.contact .rating {
+  margin-bottom: 30px;
+}
+
+.rating_title {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.contact .rating > label {
+  margin-right: 15px;
+}
+
+.contact .rating > label > input {
+  margin-right: 5px;
 }
 
 .textarea {
@@ -135,7 +184,7 @@ th {
 .contact .info {
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact .info .checkbox {
@@ -144,6 +193,7 @@ th {
 }
 
 .btn-area {
+  display: flex;
   border: 1px solid;
   border-radius: 15px;
   overflow: hidden;
@@ -159,6 +209,7 @@ th {
 
 .btn-area .reset-btn {
   padding: 10px 70px;
+  cursor: pointer;
 }
 
 .btn-area > input:hover {

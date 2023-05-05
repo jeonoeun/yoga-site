@@ -18,16 +18,9 @@ export default function Types() {
         flow can be meditative in nature, calming the mind and nervous system,
         even though you’re moving.” <br /> Vinyasa yoga is suitable for those
         who’ve never tried yoga as well as those who’ve been practicing for
-        years. <br /> Who Might Like It: Anyone who wants more movement and less
-        stillness from their yoga practice.
+        years. <br /> <strong>Who Might Like It:</strong> Anyone who wants more
+        movement and less stillness from their yoga practice.
       </p>
-      <Iframe
-        url="https://www.youtube.com/embed/yxGXmjAkE5M"
-        width="800"
-        height="400"
-        id="player"
-        className="mb-6"
-      />
       <h3>Hatha Yoga</h3>
       <p>
         Hatha yoga derives its name from the Sanskrit words for sun and moon,
@@ -44,17 +37,18 @@ export default function Types() {
         <br /> To be considered hatha, classes must include a mix of asana
         (poses), pranayama (breathing exercises), and meditation, so other types
         of yoga — like Iyengar, ashtanga, or Bikram — are technically considered
-        to be hatha yoga as well. Who Might Like It: Anyone looking for a
-        balanced practice, or those in search of a gentler type of yoga.
+        to be hatha yoga as well.
+        <br /> <strong>Who Might Like It:</strong> Anyone looking for a balanced
+        practice, or those in search of a gentler type of yoga.
       </p>
       <h3>Aerial Yoga</h3>
       <p>
-        Aerial yoga — sometimes called anti-gravity yoga — is relatively new,
-        but quickly catching on. It involves traditional yoga poses with the
-        added support of a strong, silky hammock that hangs from the ceiling.
-        The hammock is used as a supportive prop in poses like pigeon or
-        downward dog, and helps you more easily perform inverted poses (like
-        headstands and handstands) that might be beyond your abilities or
+        <strong>Aerial yoga —</strong> sometimes called anti-gravity yoga — is
+        relatively new, but quickly catching on. It involves traditional yoga
+        poses with the added support of a strong, silky hammock that hangs from
+        the ceiling. The hammock is used as a supportive prop in poses like
+        pigeon or downward dog, and helps you more easily perform inverted poses
+        (like headstands and handstands) that might be beyond your abilities or
         comfort levels. It’s also used for a cocoon-like savasana (the final
         resting pose at the end of a yoga class). Classes can be either
         physically challenging or relaxing. <br /> “Teaching aerial yoga has
@@ -62,10 +56,11 @@ export default function Types() {
         awareness and overcome fear of being inverted,” says Melissa Vance, RYT
         (Registered Yoga Teacher) 200, an aerial yoga teacher based outside of
         Atlanta. “Hanging upside down reverses the blood flow in the body and
-        decompresses the spine providing much relief and a euphoric feeling.”
-        Who Might Like It: Those who want a nontraditional yoga experience, or
-        anyone who wants the benefits of inversions but might fear going upside
-        down on their own.
+        decompresses the spine providing much relief and a euphoric feeling.”{" "}
+        <br />
+        <strong>Who Might Like It:</strong>
+        Those who want a nontraditional yoga experience, or anyone who wants the
+        benefits of inversions but might fear going upside down on their own.
       </p>
       <h3>Acro yoga</h3>
       <p>
@@ -85,9 +80,9 @@ export default function Types() {
         the physical benefits of yoga in a fun and interactive environment.” If
         you work as a base, it builds a strong lower body and core. Working as a
         flyer requires flexibility and strength, not to mention trust. <br />
-        Who Might Like It: Those who enjoy practicing with a partner, couples
-        looking to build trust and intimacy, or anyone with an adventurous
-        streak who likes to go upside down.
+        <strong>Who Might Like It:</strong> Those who enjoy practicing with a
+        partner, couples looking to build trust and intimacy, or anyone with an
+        adventurous streak who likes to go upside down.
       </p>
       <Iframe
         src="https://www.youtube.com/embed/KowDFJolg3E"
@@ -96,6 +91,30 @@ export default function Types() {
         id="player"
         className="mb-6"
       />
+      <p>
+        This is Beginner's Flow of Lukas & Margaretka. <br /> A man lifts a
+        woman by his arms and legs while lying down facing the ceiling. At this
+        time, the woman is looking at the ceiling and has her face on the side
+        of the man's legs. The man's feet rest on the woman's shoulder blades,
+        and the man's hands rest on the woman's ankles. After the woman lifts
+        one leg, she bends her knee and rests her foot on the man's hand. The
+        man supports the woman's feet with both hands, and the man's feet
+        support the woman's hips, causing the woman to slowly sit down. After
+        holding her position for a few seconds, she hooks both of the woman's
+        feet into the back of the man's knees, freeing the man's hands. After
+        that, the woman and the man hold hands, unfasten the woman's leg from
+        the back of the man's lap, and stretch it behind her. The man's feet
+        support the woman's pelvis. Then, slowly, the woman and the man release
+        their hands, and the woman floats in the air with only the man's feet.
+        After the woman bends her knees and does a simple stretch, the woman and
+        man hold hands again. Again, the woman places her legs behind the man's
+        knees and releases her hands to straighten her back upwards. After
+        briefly holding her palms together, the woman assumes a sitting position
+        and supports the woman's feet with the man's hands. The woman slowly
+        lies down and the man's feet rest on her woman's shoulder blades. The
+        woman spreads her legs and the man bends her arms as she comes down to
+        the ground.
+      </p>
     </div>
   );
 }
