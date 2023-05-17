@@ -34,7 +34,10 @@ h4 {
 }
 
 .link .icon {
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .link:hover .icon {
