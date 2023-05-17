@@ -25,6 +25,22 @@ h4 {
   object-fit: cover;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.link .icon {
+  transition: 0.5s;
+}
+
+.link:hover .icon {
+  transform: translateX(10px);
+}
+
 /* Navbar.js */
 .navbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -93,6 +109,20 @@ tr > td:last-child {
   object-fit: cover;
 }
 
+.index .italic {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.index .link {
+  margin-top: -35px;
+}
+
+.link.clicked {
+  color: #1B9C85;
+}
+
 /* Types.js */
 .types p {
   line-height: 2.3rem;
@@ -105,6 +135,12 @@ tr > td:last-child {
 
 #player {
   margin-bottom: 10px;
+}
+
+.types .bold {
+  display: block;
+  font-weight: 700;
+  padding: 5px 0;
 }
 
 /* Gallery.js */
@@ -137,6 +173,18 @@ tr > td:last-child {
 
 .gallery .acro {
   margin-top: 50px;
+}
+
+.gallery .link {
+  margin-bottom: 30px;
+}
+
+.link.vinyasa {
+  color: #1B9C85;
+}
+
+.link.acrolink {
+  color: #1B9C85;
 }
 
 /* Contact.js */

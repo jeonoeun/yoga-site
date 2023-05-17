@@ -91,6 +91,7 @@ export default function Types() {
         id="player"
         className="mb-6"
       />
+      <span className="bold">Describtion for blind people</span>
       <p>
         This is Beginner's Flow of Lukas & Margaretka. <br /> A man lifts a
         woman by his arms and legs while lying down facing the ceiling. At this

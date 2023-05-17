@@ -1,6 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Index() {
+export default function Index({ clicked, setClicked }) {
+  const handleClick = () => {
+    setClicked(true);
+  };
   return (
     <div className="index page">
       <h3>Welcome to Yoga!</h3>
@@ -8,7 +11,7 @@ export default function Index() {
         Anyone with or without an interest in yoga is welcome. Find out all
         about yoga.
       </p>
-      <p >Yoga: Its meaning</p>
+      <p className="italic">Yoga: Its meaning</p>
       <h4>Definition</h4>
       <p>
         Yoga is a physical, mental and spiritual practice that originated in
@@ -100,7 +103,7 @@ export default function Index() {
         </table>
         <img src={process.env.PUBLIC_URL + "./images/img01.png"} alt="" />
       </div>
-      <p>Yoga: Its Origin, History and Development</p>
+      <p className="italic">Yoga: Its Origin, History and Development</p>
       <h4>Origin</h4>
       <p>
         Yoga is essentially a spiritual discipline based on an extremely subtle
@@ -109,7 +112,7 @@ export default function Index() {
         from the Sanskrit root ‘Yuj’, meaning ‘to join’ or ‘to yoke’ or ‘to
         unite’. As per Yogic scriptures the practice of Yoga leads to the union
         of individual consciousness with that of the Universal Consciousness,
-        indicating a perfect harmony between the mind and body, Man & Nature.{" "}
+        indicating a perfect harmony between the mind and body, Man & Nature.
         <br />
         According to modern scientists, everything in the universe is just a
         manifestation of the same quantum firmament. One who experiences this
@@ -206,9 +209,17 @@ export default function Index() {
           Satyananda Sarasvati and the like.
         </p>
       </div>
+      <p className={`link ${clicked ? "clicked" : ""}`} onClick={handleClick}>
+        <Link to="https://yoga.ayush.gov.in/Yoga-History/" target="_blank">
+          More info about yoga history
+        </Link>
+        <span className="icon">
+          <i className="xi-arrow-right"></i>
+        </span>
+      </p>
       <h3>So Yoga is... (Conclusion)</h3>
       <p>
-        Yoga works on the level of one’s body, mind, emotion and energy. <br />{" "}
+        Yoga works on the level of one’s body, mind, emotion and energy. <br />
         This has given rise to four broad classifications of Yoga: karma yoga,
         where we utilize the body; bhakti yoga, where we utilize the emotions;
         gyana yoga, where we utilize the mind and intelect; and kriya yoga,
@@ -226,7 +237,11 @@ export default function Index() {
         taking care of the individual, the 'Being'. It is presumed that a good,
         balanced, integrated, truthful, clean, transparent person will be more
         useful to oneself, family, society, nation, nature and humanity at
-        large.
+        large. <br />
+        Yoga education is 'Being oriented'. Details of working with 'being
+        oriented' aspect have been outlined in various living traditions and
+        texts and the method contributing to this important field is known as
+        'Yoga'.
       </p>
     </div>
   );
