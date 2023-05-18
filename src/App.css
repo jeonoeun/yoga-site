@@ -123,7 +123,7 @@ tr > td:last-child {
 }
 
 .link.clicked {
-  color: #1B9C85;
+  color: #1b9c85;
 }
 
 /* Types.js */
@@ -183,16 +183,33 @@ tr > td:last-child {
 }
 
 .link.vinyasa {
-  color: #1B9C85;
+  color: #1b9c85;
 }
 
 .link.acrolink {
-  color: #1B9C85;
+  color: #1b9c85;
 }
 
 /* Contact.js */
+.bg-area {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 190px);
+  z-index: -1;
+}
+
+.bg-area > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact {
   margin-top: 100px;
+  z-index: 1;
 }
 
 .email-form {

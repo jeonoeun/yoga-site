@@ -51,108 +51,114 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact page">
-      <form ref={form} onSubmit={sendEmail} className="email-form">
-        <input
-          className="input-email"
-          type="email"
-          name="user_email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Please enter your email!"
-        />
-        <div className="rating">
-          <p className="rating_title">Please rate our site!</p>
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value="1, ★"
-              checked={radioOne}
-              onClick={() => {
-                setRadioOne(!radioOne);
-              }}
-            />
-            ★
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value="2, ★★"
-              checked={radioTwo}
-              onClick={() => {
-                setRadioTwo(!radioTwo);
-              }}
-            />
-            ★★
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value="3, ★★★"
-              checked={radioThree}
-              onClick={() => {
-                setRadioThree(!radioThree);
-              }}
-            />
-            ★★★
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value="4, ★★★★"
-              checked={radioFour}
-              onClick={() => {
-                setRadioFour(!radioFour);
-              }}
-            />
-            ★★★★
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value="5, ★★★★★"
-              checked={radioFive}
-              onClick={() => {
-                setRadioFive(!radioFive);
-              }}
-            />
-            ★★★★★
-          </label>
-        </div>
-        <textarea
-          className="textarea"
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Text area (Comment)"
-        />
-        <div className="info">
-          <p>Do you agree to provide information?</p>
-          <div className="checkbox">
-            <input
-              id="consent"
-              type="checkbox"
-              text="Consent"
-              checked={consent}
-              onClick={() => {
-                setConsent(!consent);
-              }}
-            />
-            <label htmlFor="consent">Consent</label>
+    <>
+      <div className="bg-area">
+        <img src={process.env.PUBLIC_URL + "./images/contact_bg.jpg"} alt="" />
+      </div>
+      <div className="contact page">
+        <form ref={form} onSubmit={sendEmail} className="email-form">
+          <input
+            className="input-email"
+            type="email"
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Please enter your email!"
+          />
+          <div className="rating">
+            <p className="rating_title">Please rate our site!</p>
+            <label>
+              <input
+                type="radio"
+                name="rating"
+                value="1, ★"
+                checked={radioOne}
+                onClick={() => {
+                  setRadioOne(!radioOne);
+                }}
+              />
+              ★
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="rating"
+                value="2, ★★"
+                checked={radioTwo}
+                onClick={() => {
+                  setRadioTwo(!radioTwo);
+                }}
+              />
+              ★★
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="rating"
+                value="3, ★★★"
+                checked={radioThree}
+                onClick={() => {
+                  setRadioThree(!radioThree);
+                }}
+              />
+              ★★★
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="rating"
+                value="4, ★★★★"
+                checked={radioFour}
+                onClick={() => {
+                  setRadioFour(!radioFour);
+                }}
+              />
+              ★★★★
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="rating"
+                value="5, ★★★★★"
+                checked={radioFive}
+                onClick={() => {
+                  setRadioFive(!radioFive);
+                }}
+              />
+              ★★★★★
+            </label>
           </div>
-        </div>
-        <div className="btn-area">
-          <div className="reset-btn" onClick={handleReset}>
-            Reset
+          <textarea
+            className="textarea"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Text area (Comment)"
+          />
+          <div className="info">
+            <p>Do you agree to provide information?</p>
+            <div className="checkbox">
+              <input
+                id="consent"
+                type="checkbox"
+                text="Consent"
+                checked={consent}
+                onClick={() => {
+                  setConsent(!consent);
+                }}
+              />
+              <label htmlFor="consent">Consent</label>
+            </div>
           </div>
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
-    </div>
+          <div className="btn-area">
+            <div className="reset-btn" onClick={handleReset}>
+              Reset
+            </div>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
