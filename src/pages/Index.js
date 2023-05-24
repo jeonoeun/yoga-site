@@ -5,14 +5,14 @@ export default function Index({ clicked, setClicked }) {
     setClicked(true);
   };
   return (
-    <div className="index page">
-      <h3>Welcome to Yoga!</h3>
+    <section className="index page">
+      <h1>Welcome to Yoga!</h1>
       <p className="target">
         Anyone with or without an interest in yoga is welcome. Find out all
         about yoga.
       </p>
-      <p className="italic">Yoga: Its meaning</p>
-      <h4>Definition</h4>
+      <h2 className="italic">Yoga: Its meaning</h2>
+      <h2>Definition</h2>
       <p>
         Yoga is a physical, mental and spiritual practice that originated in
         ancient India. First codified by the sage Patanjali in his Yoga Sutras
@@ -32,7 +32,7 @@ export default function Index({ clicked, setClicked }) {
         practices, most focus on bringing together body, mind and breath as a
         means of altering energy or shifting consciousness.
       </p>
-      <h4>Yogapedia explains Yoga</h4>
+      <h2>Yogapedia explains Yoga</h2>
       <p>
         Modern yoga is most commonly associated with the physical practice of
         asana, a series of postures often weaved together in styles such as
@@ -52,6 +52,20 @@ export default function Index({ clicked, setClicked }) {
       <div className="table_sec">
         <table className="table">
           <tbody>
+            <tr>
+              <td colSpan="2">
+                <caption className="caption">
+                  <strong>Movie datasheet</strong>
+                  <details className="details">
+                    <summary>Help</summary>
+                    <p>
+                      In this table you will find the following rows: Release
+                      Date, Title, IMDb's rating
+                    </p>
+                  </details>
+                </caption>
+              </td>
+            </tr>
             <tr>
               <td>Yamas</td>
               <td>
@@ -101,10 +115,13 @@ export default function Index({ clicked, setClicked }) {
             </tr>
           </tbody>
         </table>
-        <img src={process.env.PUBLIC_URL + "./images/img01.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "./images/img01.png"}
+          alt="Types of yoga"
+        />
       </div>
-      <p className="italic">Yoga: Its Origin, History and Development</p>
-      <h4>Origin</h4>
+      <h2 className="italic">Yoga: Its Origin, History and Development</h2>
+      <h2>Origin</h2>
       <p>
         Yoga is essentially a spiritual discipline based on an extremely subtle
         science, which focuses on bringing harmony between mind and body. It is
@@ -131,7 +148,7 @@ export default function Index({ clicked, setClicked }) {
         and spiritual upliftment of humanity.Basic humane values are the very
         identity of Yoga Sadhana.
       </p>
-      <h4>History</h4>
+      <h2>History</h2>
       <p>
         The practice of Yoga is believed to have started with the very dawn of
         civilization. The science of yoga has its origin thousands of years ago,
@@ -150,7 +167,10 @@ export default function Index({ clicked, setClicked }) {
         crafted this culture around a core yogic way of life.
       </p>
       <div className="history">
-        <img src={process.env.PUBLIC_URL + "./images/img02.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "./images/img02.png"}
+          alt="500-800 History"
+        />
         <p>
           500 BC - 800 A.D. <br />
           Tentatively, the period between 500 BC - 800 A.D. is considered as the
@@ -171,7 +191,10 @@ export default function Index({ clicked, setClicked }) {
         </p>
       </div>
       <div className="history">
-        <img src={process.env.PUBLIC_URL + "./images/img03.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "./images/img03.png"}
+          alt="800-1700 History"
+        />
         <p>
           800 A.D. - 1700 A.D. <br />
           The very important commentary on Yoga sutra by Vyasa was also written.
@@ -190,7 +213,10 @@ export default function Index({ clicked, setClicked }) {
         </p>
       </div>
       <div className="history">
-        <img src={process.env.PUBLIC_URL + "./images/img04.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "./images/img04.png"}
+          alt="1700-1900 History"
+        />
         <p>
           1700 - 1900 A.D. <br />
           The period between 1700 - 1900 A.D. is considered as Modern period in
@@ -209,40 +235,45 @@ export default function Index({ clicked, setClicked }) {
           Satyananda Sarasvati and the like.
         </p>
       </div>
-      <p className={`link ${clicked ? "clicked" : ""}`} onClick={handleClick}>
-        <Link to="https://yoga.ayush.gov.in/Yoga-History/" target="_blank">
-          More info about yoga history
-        </Link>
-        <span className="icon">
-          <i className="xi-arrow-right"></i>
-        </span>
-      </p>
-      <h3>So Yoga is... (Conclusion)</h3>
-      <p>
-        Yoga works on the level of one’s body, mind, emotion and energy. <br />
-        This has given rise to four broad classifications of Yoga: karma yoga,
-        where we utilize the body; bhakti yoga, where we utilize the emotions;
-        gyana yoga, where we utilize the mind and intelect; and kriya yoga,
-        where we utilize the energy. Each system of Yoga we practice would fall
-        within the gamut of one or more of these categories. <br /> Every
-        individual is a unique combination of these four factors. "All the
-        ancient commentaries on Yoga have stressed that it is essential to work
-        under the direction of a Guru.” The reason being that only a Guru can
-        mix the appropriate combination of the four fundamental paths, as is
-        necessary for each seeker. <br /> Yoga Education:Tradiitionally, Yoga
-        Education was imparted by knowledgeable, experienced, and wise persons
-        in the families (comparable with the education imparted in convents in
-        the west) and then by the Seers (Rishis/Munis/Acharyas) in Ashramas
-        (compared with monastries). Yoga Education, on the other hand, aims at
-        taking care of the individual, the 'Being'. It is presumed that a good,
-        balanced, integrated, truthful, clean, transparent person will be more
-        useful to oneself, family, society, nation, nature and humanity at
-        large. <br />
-        Yoga education is 'Being oriented'. Details of working with 'being
-        oriented' aspect have been outlined in various living traditions and
-        texts and the method contributing to this important field is known as
-        'Yoga'.
-      </p>
-    </div>
+      <aside>
+        <p className={`link ${clicked ? "clicked" : ""}`} onClick={handleClick}>
+          <Link to="https://yoga.ayush.gov.in/Yoga-History/" target="_blank">
+            More info about yoga history
+          </Link>
+          <span className="icon">
+            <i className="xi-arrow-right"></i>
+          </span>
+        </p>
+      </aside>
+      <footer>
+        <h1>So Yoga is... (Conclusion)</h1>
+        <p>
+          Yoga works on the level of one’s body, mind, emotion and energy.{" "}
+          <br />
+          This has given rise to four broad classifications of Yoga: karma yoga,
+          where we utilize the body; bhakti yoga, where we utilize the emotions;
+          gyana yoga, where we utilize the mind and intelect; and kriya yoga,
+          where we utilize the energy. Each system of Yoga we practice would
+          fall within the gamut of one or more of these categories. <br /> Every
+          individual is a unique combination of these four factors. "All the
+          ancient commentaries on Yoga have stressed that it is essential to
+          work under the direction of a Guru.” The reason being that only a Guru
+          can mix the appropriate combination of the four fundamental paths, as
+          is necessary for each seeker. <br /> Yoga Education:Tradiitionally,
+          Yoga Education was imparted by knowledgeable, experienced, and wise
+          persons in the families (comparable with the education imparted in
+          convents in the west) and then by the Seers (Rishis/Munis/Acharyas) in
+          Ashramas (compared with monastries). Yoga Education, on the other
+          hand, aims at taking care of the individual, the 'Being'. It is
+          presumed that a good, balanced, integrated, truthful, clean,
+          transparent person will be more useful to oneself, family, society,
+          nation, nature and humanity at large. <br />
+          Yoga education is 'Being oriented'. Details of working with 'being
+          oriented' aspect have been outlined in various living traditions and
+          texts and the method contributing to this important field is known as
+          'Yoga'.
+        </p>
+      </footer>
+    </section>
   );
 }

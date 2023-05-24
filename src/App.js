@@ -12,12 +12,14 @@ export default function App() {
   const [acro, setAcro] = useState(false);
   return (
     <div>
-      <img
-        className="banner-img"
-        src={process.env.PUBLIC_URL + "./images/banner.jpg"}
-        alt=""
-      />
-      <Navbar />
+      <header>
+        <img
+          className="banner-img"
+          src={process.env.PUBLIC_URL + "./images/banner.jpg"}
+          alt=""
+        />
+        <Navbar />
+      </header>
       <div className="container">
         <Routes>
           <Route

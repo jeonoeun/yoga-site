@@ -1,9 +1,8 @@
 import React from "react";
-import Iframe from "react-iframe";
 
 export default function Types() {
   return (
-    <div className="types page">
+    <article className="types page">
       <h3>Vinyasa Yoga</h3>
       <p>
         Vinyasa yoga is also called “flow yoga” or “vinyasa flow”. It is an
@@ -84,14 +83,17 @@ export default function Types() {
         partner, couples looking to build trust and intimacy, or anyone with an
         adventurous streak who likes to go upside down.
       </p>
-      <Iframe
-        src="https://www.youtube.com/embed/KowDFJolg3E"
-        width="800"
-        height="400"
-        id="player"
-        className="mb-6"
-      />
-      <span className="bold">Describtion for blind people</span>
+      <video
+        width="640"
+        height="480"
+        controls
+        poster="./images/thumbnail.png"
+        type="video/mp4"
+        className="video"
+      >
+        <source src="/videos/yoga.mp4" />
+      </video>
+      <span className="bold">Description for blind people</span>
       <p>
         This is Beginner's Flow of Lukas & Margaretka. <br /> A man lifts a
         woman by his arms and legs while lying down facing the ceiling. At this
@@ -116,6 +118,6 @@ export default function Types() {
         woman spreads her legs and the man bends her arms as she comes down to
         the ground.
       </p>
-    </div>
+    </article>
   );
 }

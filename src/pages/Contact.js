@@ -28,13 +28,13 @@ export default function Contact() {
     emailjs
       .sendForm(
         "service_qywhs9q",
-        "template_attorkw",
+        "template_8eadq46",
         form.current,
         "00lB1I4MPjvD8ea2d"
       )
       .then(
         (result) => {
-          alert("전송되었습니다.");
+          alert("Sent successfully");
           setEmail("");
           setMessage("");
           setConsent(false);
@@ -45,7 +45,7 @@ export default function Contact() {
           setRadioFive(false);
         },
         (error) => {
-          alert("전송을 실패했습니다.");
+          alert("Sent error");
         }
       );
   };
@@ -55,7 +55,7 @@ export default function Contact() {
       <div className="bg-area">
         <img src={process.env.PUBLIC_URL + "./images/contact_bg.jpg"} alt="" />
       </div>
-      <div className="contact page">
+      <section className="contact page">
         <form ref={form} onSubmit={sendEmail} className="email-form">
           <input
             className="input-email"
@@ -158,7 +158,7 @@ export default function Contact() {
             <input type="submit" value="Submit" />
           </div>
         </form>
-      </div>
+      </section>
     </>
   );
 }

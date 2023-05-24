@@ -9,7 +9,7 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
     setAcro(true);
   };
   return (
-    <div className="gallery page">
+    <section className="gallery page">
       <h3>Vinyasa Yoga - Cardio Yoga Sequence</h3>
       <p className={`link ${vinyasa ? "vinyasa" : ""}`} onClick={handleVinyasa}>
         <Link
@@ -23,7 +23,7 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
         </span>
       </p>
       <div className="flex">
-        <div className="img">
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -33,8 +33,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa1.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -44,8 +44,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa2.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -55,8 +55,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa3.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -66,10 +66,10 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa4.png"}
             alt=""
           />
-        </div>
+        </figure>
       </div>
       <div className="flex">
-        <div className="img">
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -79,8 +79,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa2.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -90,8 +90,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa6.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -101,8 +101,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa7.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -112,7 +112,7 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/vanyasa8.png"}
             alt=""
           />
-        </div>
+        </figure>
       </div>
       <h3 className="acro">
         Acro Yoga - Yoga Sequence For Teens With Partners
@@ -129,7 +129,7 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
         </span>
       </p>
       <div className="flex">
-        <div className="img">
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -139,8 +139,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro1.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -150,8 +150,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro2.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -161,8 +161,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro3.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -172,10 +172,10 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro4.png"}
             alt=""
           />
-        </div>
+        </figure>
       </div>
       <div className="flex">
-        <div className="img">
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -185,8 +185,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro5.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -196,8 +196,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro6.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -207,8 +207,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro7.png"}
             alt=""
           />
-        </div>
-        <div className="img">
+        </figure>
+        <figure className="img">
           <img
             onClick={() => {
               window.open(
@@ -218,8 +218,8 @@ export default function Gallery({ vinyasa, setVinyasa, acro, setAcro }) {
             src={process.env.PUBLIC_URL + "./images/acro8.png"}
             alt=""
           />
-        </div>
+        </figure>
       </div>
-    </div>
+    </section>
   );
 }
