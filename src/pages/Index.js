@@ -55,13 +55,10 @@ export default function Index({ clicked, setClicked }) {
             <tr>
               <td colSpan="2">
                 <caption className="caption">
-                  <strong>Movie datasheet</strong>
+                  <strong>The 8 Limbs of Yoga</strong>
                   <details className="details">
                     <summary>Help</summary>
-                    <p>
-                      In this table you will find the following rows: Release
-                      Date, Title, IMDb's rating
-                    </p>
+                    <p>You can get some information about the limbs of yoga.</p>
                   </details>
                 </caption>
               </td>
